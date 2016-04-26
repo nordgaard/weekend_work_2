@@ -8,7 +8,7 @@ end
 puts "TESTING palindrome?"
 puts
 
-result = palindrome?("racecar")
+result = palindrome?("donkey")
 
 puts "Your method returned:"
 p result
@@ -20,7 +20,7 @@ else
   puts "F"
 end
 
-result = palindrome?("wazzzzup")
+result = palindrome?("teet")
 
 puts "Your method returned:"
 p result
