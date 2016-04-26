@@ -28,13 +28,13 @@ else
   puts "F"
 end
 
-result = split_array([0, 1, 2, 3, 4, 5], 3)
+result = split_array([0, 1, 2, 3, 4, 5, 6, 7], 4)
 
 puts "Your method returned:"
 p result
 puts
 
-if result == [[0, 1, 2], [3, 4, 5]]
+if result == [[0, 1, 2, 3], [4, 5, 6, 7]]
   puts "PASS!"
 else
   puts "F"
