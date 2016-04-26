@@ -67,13 +67,13 @@ else
 end
 puts
 
-8.times do
+6.times do
   tree.winter_season
 end
 
 result = tree.bear_fruit?
 
-puts "bear_fruit? after 8 winters:"
+puts "bear_fruit? after 6 winters:"
 puts result
 puts
 
@@ -83,13 +83,29 @@ else
   puts "F"
 end
 
-7.times do
+4.times do
   tree.winter_season
 end
 
 result = tree.bear_fruit?
 
-puts "bear_fruit? after 15 winters:"
+puts "bear_fruit? after 10 winters:"
+puts result
+puts
+
+if result == false
+  puts "PASS!"
+else
+  puts "F"
+end
+
+10.times do
+  tree.winter_season
+end
+
+result = tree.bear_fruit?
+
+puts "bear_fruit? after 20 winters:"
 puts result
 puts
 
