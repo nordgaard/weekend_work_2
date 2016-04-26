@@ -10,15 +10,17 @@
 
 class Yodel
 
-  attr_reader :segment, :count
+  attr_reader :segment, :count,:how_annoying
 
   def initialize(hash)
     @segment = hash[:segment]
     @count = hash[:count]
+    @how_annoying = hash[:how_annoying]
   end
 
   def articulate
-    segment * count
+    p segment * count
+    how_annoying * count
   end
 
 end
@@ -28,7 +30,7 @@ end
 puts "TESTING the Yodel class..."
 puts
 
-yodel = Yodel.new({segment: "Oh-di-lay-ee-ay", count: 4})
+yodel = Yodel.new({segment: "Oh-di-lay-ee-ay", count: 4, how_annoying:" Please stop"})
 
 result = yodel.segment
 
